@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="icon" href="images/ico.png" sizes="32x32" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="Computer Force Logo" class="logo" />
+        </a>
+      </div>
+    </header>
+
+    <nav>
+      <div class="menu-btn">
+        <img src="images/burger.svg" alt="Menu" />
+      </div>
+      <div class="bag-btn">
+        <img src="images/bag.svg" alt="Shopping Bag" />
+      </div>
+      <ul>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <button>Search</button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="main-section">
+        <div class="intro">
+          <h1>Registration Form</h1>
+          <p>
+            Please complete the following form to register for an account on our
+            website.
+          </p>
+        </div>
+        <div class="highlighted-text"></div>
+
+        <div class="register">
+          <form action="/submit" method="POST">
+            <div class="form-group">
+              <label for="username">Username*</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password*</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="form-group">
+              <label for="confirm_password">Confirm Password*</label>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="first_name">First Name*</label>
+              <input type="text" id="first_name" name="first_name" required />
+            </div>
+            <div class="form-group">
+              <label for="surname">Surname*</label>
+              <input type="text" id="surname" name="surname" required />
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender*</label>
+              <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob" />
+            </div>
+            <div class="form-group">
+              <label for="address">Address*</label>
+              <input type="text" id="address" name="address" required />
+            </div>
+            <div class="form-group">
+              <label for="suburb">Suburb*</label>
+              <input type="text" id="suburb" name="suburb" required />
+            </div>
+            <div class="form-group">
+              <label for="postcode">Postcode*</label>
+              <input type="text" id="postcode" name="postcode" required />
+            </div>
+            <div class="form-group">
+              <label for="state">State*</label>
+              <select id="state" name="state" required>
+                <option value="ACT">ACT</option>
+                <option value="NSW">NSW</option>
+                <option value="NT">NT</option>
+                <option value="QLD">QLD</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="VIC">VIC</option>
+                <option value="WA">WA</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+
+            <div class="form-buttons">
+              <button type="reset" class="clear-btn">Clear</button>
+              <button type="submit" class="register-btn">Register</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <aside>
+        <h2>Purchases</h2>
+        <table>
+          <tr>
+            <td>Test Item 1</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>Test Item 2</td>
+            <td>$500</td>
+          </tr>
+          <tr class="total-row">
+            <td>Total</td>
+            <td>$1500</td>
+          </tr>
+        </table>
+        <button>Go to Checkout</button>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company Info</h4>
+          <p>ABN: 123 456 789</p>
+          <p>RTO: 12345</p>
+          <p>CRICOS: 98765</p>
+          <p class="copyright">&copy; 2024 Computer Force - Lucas Chavez</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact Us</h4>
+          <p>Email: support@computerforce.com</p>
+          <p>Phone: +1 234 567 890</p>
+          <div class="social-icons">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="images/youtube.svg" alt="Youtube" /></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
